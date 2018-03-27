@@ -5,7 +5,7 @@ import { selectors, actions } from '../some/path'
 import Comp from './Comp'
 
 const createDoSomething = _.memoize(
-  dispatch => params => params => dispatch(actions.something(params))
+  dispatch => params => dispatch(actions.something(params))
 )
 const createSendDetails = _.memoize(
   (dispatch, details) => () => dispatch(actions.sendDetails({ details }))
