@@ -35,6 +35,7 @@ const mapDispatchToProps = dispatch => ({ dispatch })
 const mergeProps = ({ state }, { dispatch }, ownProps) => {
   const details = selectors.getDetails(state)
   return {
+    ...ownProps,
     details
   }
 }

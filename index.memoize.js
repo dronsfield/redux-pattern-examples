@@ -22,6 +22,7 @@ const mergeProps = ({ state }, { dispatch }, ownProps) => {
   const sendDetails = createSendDetails(dispatch, details)
   const sendDetailsWithFlag = createSendDetailsWithFlag(dispatch, details, ownProps.flag)
   return {
+    ...ownProps,
     details,
     doSomething,
     sendDetails,
